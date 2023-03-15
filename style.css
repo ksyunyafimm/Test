@@ -1,0 +1,114 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.wrap {
+    margin: 5px;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0 0 10px 0;
+    height: 100px;
+    text-align: center;
+}
+
+.main__columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#dashed-border {
+    border: 1px dashed black;
+}
+
+.main__columns__column {
+    border: 1px solid black;
+    height: 200px;
+    width: 33%;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+    .main__columns {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main__columns__column {
+        width: 100%;
+    }
+}
+
+.first {
+    background-color: #528CE0;
+}
+
+.second {
+    background-color: #E0F2BE;
+}
+
+.third {
+    background-color: #FFCACA;
+}
+
+.main__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.main__blocks__block {
+    border: 1px solid black;
+    height: 300px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+    .main__blocks {
+        flex-direction: column;
+    }
+
+}
+
+#second-block {
+    flex-grow: 2;
+}
+
+#myModal {
+    visibility: hidden;
+    position: fixed;
+    z-index: 99;
+    inset: 0;
+    background-color: rgba(248, 246, 246, 0.5);
+    display: flex;
+    padding: 30px;
+}
+
+.modal-window {
+    position: relative;
+    max-width: 600px;
+    background: -webkit-linear-gradient(90deg, #d4aaaa, #97a0c2); /* Chrome 10-25, Safari 5.1-6 */
+    height: 100px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.modal-title {
+    margin-right: 15px;
+}

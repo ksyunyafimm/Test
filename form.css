@@ -1,0 +1,30 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+.wrap{
+    margin: 5px;
+    height: 100vh;
+
+}
+#form{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    height: 400px;
+}
+#results{
+    margin: auto;
+    padding: 10px;
+}
